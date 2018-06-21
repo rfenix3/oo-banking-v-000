@@ -10,7 +10,7 @@ class Transfer
   end
   
   def valid?
-    @sender.valid? && @reciever.valid? # && @amount < @sender.balance
+    @sender.valid? && @receiver.valid?
   end
   
 
