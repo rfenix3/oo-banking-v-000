@@ -10,7 +10,7 @@ class Transfer
   end
   
   def valid?
-    if Bank
+    if @sender.status == "open" 
   
 
   
