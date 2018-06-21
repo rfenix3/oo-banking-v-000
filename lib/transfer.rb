@@ -6,19 +6,12 @@ class Transfer
     @sender = sender
     @receiver = receiver
     @amount = amount
+    @status = 'pending'
   end
   
   
   
       describe 'initialize' do
-
-      it "initializes with a sender" do
-        expect(transfer.sender).to eq(amanda)
-      end
-
-      it "initializes with a receiver" do
-        expect(transfer.receiver).to eq(avi)
-      end
 
       it "always initializes with a status of 'pending'" do
         expect(transfer.status).to eq("pending")
